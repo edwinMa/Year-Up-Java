@@ -18,7 +18,7 @@ public class ShoppingCart {
 	}
 	
 	/*
-	 * display all the items in the shopping cart
+	 * ShoppingCart instance method -- display all the items in the shopping cart
 	 */
 	public void displayItems (DecimalFormat df)
 	{
@@ -32,7 +32,7 @@ public class ShoppingCart {
 	}
 
 	/*
-	 * add an item to the cart
+	 * ShoppingCart instance method --add an item to the cart
 	 */
 	public void addItem (Double item)
 	{
@@ -40,7 +40,7 @@ public class ShoppingCart {
 	}
 	
 	/*
-	 * remove the item at the given index from the cart
+	 * ShoppingCart instance method --remove the item at the given index from the cart
 	 */
 	public void removeItem (int itemIndex)
 	{
@@ -48,7 +48,7 @@ public class ShoppingCart {
 	}
 	
 	/*
-	 * return the number of items in the cart
+	 * ShoppingCart instance method --return the number of items in the cart
 	 */
 	public int itemCount ()
 	{
@@ -56,7 +56,7 @@ public class ShoppingCart {
 	}
 	
 	/*
-	 * add up items in shopping cart and return total not including tax
+	 * ShoppingCart instance method --add up items in shopping cart and return total not including tax
 	 */
 	public double calculateItemTotal ()
 	{
@@ -70,13 +70,16 @@ public class ShoppingCart {
 	}
 	
 	/*
-	 * empty the items in the cart
+	 * ShoppingCart instance method --empty the items in the cart
 	 */
 	public void removeAllItems ()
 	{
 		items.clear();
 	}
 	
+	/*
+	 * main method to begin Java program
+	 */
 	public static void main(String[] args)
 	{
 		// create scanner to get user input
