@@ -123,7 +123,8 @@ public class ShoppingCart {
 				System.out.println ("Your total bill is over $100. You are eligible for a new credit line");
 			}
 			
-			// empty shopping cart
+			// empty shopping cart; we removed everything here so that previous items are not included
+			// if user wants to shop again
 			cart.removeAllItems();
 			
 			// ask user if they want to continue shopping
@@ -135,6 +136,10 @@ public class ShoppingCart {
 		
 	}
 	
+	/*
+	 * note that the functions below are not instance methods of the ShoppingCart; they are helper functions
+	 * to the main function
+	 */
 	/*
 	 * get individual item prices from user or -1 when done
 	 */
