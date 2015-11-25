@@ -16,10 +16,14 @@ public class YUButtonHandler implements ActionListener
 		myFrame = mainFrame;
 	}
 
-	public void actionPerformed(ActionEvent e)
+	/*
+	 * This class implements the ActionListener interface and so it we must have an
+	 * actionPerformed method to handle the button events from the main frame
+	 */
+	public void actionPerformed(ActionEvent event)
 	{
 		// check the ActionEvent source to figure out which button was clicked
-		JButton clickedButton = (JButton)e.getSource();
+		JButton clickedButton = (JButton)event.getSource();
 		
 		if (clickedButton == myFrame.enterButton)
 		{
