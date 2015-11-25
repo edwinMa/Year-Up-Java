@@ -123,7 +123,7 @@ public class YUSwingWelcome extends JFrame {
 	protected void exit()
 	{
 		System.out.println("Good bye");
-        System.exit(0);
+		System.exit(0);
 	}
 	
 
